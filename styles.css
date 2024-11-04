@@ -7,6 +7,25 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+    display: none;
+}
+
+.theme-toggle:checked ~ body {
+    background-color: #222;
+    color: #eee;
+}
+
+.theme-toggle:checked ~ header,
+.theme-toggle:checked ~ footer {
+    background: #444;
+}
+
+.theme-toggle:checked ~ nav ul li a {
+    color: #ddd;
 }
 
 header {
@@ -14,6 +33,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 .logo-container {
@@ -47,20 +67,22 @@ nav ul li a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: lightcoral; /* Highlight on hover */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: lightcoral;
+    color: white;
 }
 
 .tab-content {
-    display: none; /* Hide all content sections by default */
+    display: none;
 }
 
 .tab-content:target {
-    display: block; /* Show the targeted section */
+    display: block;
 }
 
 .tab-content.active {
-    display: block; /* For active section */
+    display: block;
 }
 
 section {
@@ -68,15 +90,15 @@ section {
 }
 
 .menu-item {
-    border: 2px solid #333; /* Square box around each menu item */
+    border: 2px solid #333;
     padding: 1rem;
     margin-bottom: 1rem;
     transition: background-color 0.3s;
 }
 
 .menu-item:hover {
-    background-color: lightcoral; /* Change background on hover */
-    color: white; /* Change text color on hover */
+    background-color: lightcoral;
+    color: white;
 }
 
 .price {
@@ -124,18 +146,24 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
 }
 
-textarea {
-    resize: vertical; /* Allow vertical resizing */
+input:focus,
+textarea:focus {
+    border-color: lightcoral;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 212, 0.5);
 }
 
-
+textarea {
+    resize: vertical;
+}
 
 button {
     background-color: rgb(255, 0, 212);
@@ -144,15 +172,21 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background-color: rgb(139, 0, 127);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
     }
 }
