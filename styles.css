@@ -44,13 +44,18 @@ nav a {
 
 /* Hover and active state styles */
 nav a:hover,
-nav a:target {
+nav a.active {
     color: red; /* Active tab color */
     font-weight: bold; /* Make the active tab bold */
 }
 
 .tab-content {
     display: none; /* Hide all sections by default */
+}
+
+/* Show the Menu section by default */
+#menu {
+    display: block; /* Show the Menu section by default */
 }
 
 .tab-content:target {
@@ -141,6 +146,12 @@ footer {
     table {
         font-size: 0.9rem;
     }
+
+    .logo {
+        width: 100px; /* logo size */
+        height: 100px;
+    }
+}
 
     .logo {
         width: 100px; /* logo size */
