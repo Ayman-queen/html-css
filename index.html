@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ayman Restaurant</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jfif" alt="Ayman Restaurant Logo" class="logo">
+            <h1>Ayman Restaurant</h1>
+        </div>
+        <nav>
+            <a href="#menu" class="tab">Menu</a>
+            <a href="#gallery" class="tab">Gallery</a>
+            <a href="#contact" class="tab">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu" class="tab-content">
+            <h2>Menu</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dish</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pasta Primavera</td>
+                        <td>Fresh vegetables with pasta</td>
+                        <td>$12.99</td>
+                    </tr>
+                    <tr>
+                        <td>Margherita Pizza</td>
+                        <td>Classic pizza with fresh basil</td>
+                        <td>$10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Salad</td>
+                        <td>Crisp romaine with Caesar dressing</td>
+                        <td>$8.99</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Lava Cake</td>
+                        <td>Warm chocolate cake with molten center</td>
+                        <td>$6.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="gallery" class="tab-content">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery-image-1.jfif" alt="Dish 1">
+                <img src="images/gallery-image-2.jpg" alt="Dish 2">
+                <img src="images/gallery-image-3.jfif" alt="Dish 3">
+                <img src="images/gallery-image-4.jfif" alt="Dish 4">
+                <img src="images/gallery-image-5.jfif" alt="Dish 5">
+                <img src="images/Margherita Pizza.jfif" alt="Dish 6">
+                <img src="images/Caesar Salad.jfif" alt="Dish 7">
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ayman Restaurant</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 50px; /* Adjust logo width */
+    height: 50px; /* Adjust logo height */
+    margin-right: 1rem; /* Space between logo and title */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5px; /* Space between links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover and active state styles */
+nav a:hover,
+nav a:target {
+    color: red; /* Active tab color */
+    font-weight: bold; /* Make the active tab bold */
+}
+
+.tab-content {
+    display: none; /* Hide all sections by default */
+}
+
+.tab-content:target {
+    display: block; /* Show the section that matches the target */
+}
+
+section {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1; /* Ensures a square shape */
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for transform and shadow */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slightly scales the image on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #007185;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #005f68;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column; /* Stack links on small screens */
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 100px; /* logo size */
+        height: 100px;
+    }
+}
