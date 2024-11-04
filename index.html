@@ -7,14 +7,17 @@
     <title>Ayman Restaurant</title>
 </head>
 <body>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    <label for="theme-toggle" class="theme-label">Toggle Theme</label>
+
     <header>
         <div class="logo-container">
             <img src="images/logo.jfif" alt="Ayman Restaurant Logo" class="logo">
             <h1>Ayman Restaurant</h1>
         </div>
-        <nav>
+        <nav aria-label="Primary Navigation" role="navigation">
             <ul>
-                <li><a href="#menu" class="tab">Menu</a></li>
+                <li><a href="#menu" class="tab" aria-current="page">Menu</a></li>
                 <li><a href="#about" class="tab">About</a></li>
                 <li><a href="#gallery" class="tab">Gallery</a></li>
                 <li><a href="#contact" class="tab">Contact</a></li>
@@ -107,7 +110,7 @@
     </main>
 
     <footer>
-       <p>&copy; 2024 Ayman Restaurant</p>
+        <p>&copy; 2024 Ayman Restaurant</p>
     </footer>
 </body>
 </html>
