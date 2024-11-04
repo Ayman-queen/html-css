@@ -13,78 +13,104 @@
             <h1>Ayman Restaurant</h1>
         </div>
         <nav>
-            <a href="#menu" class="tab active">Menu</a>
-            <a href="#gallery" class="tab">Gallery</a>
-            <a href="#contact" class="tab">Contact</a>
+            <ul>
+                <li><a href="#menu" class="tab">Menu</a></li>
+                <li><a href="#about" class="tab">About</a></li>
+                <li><a href="#gallery" class="tab">Gallery</a></li>
+                <li><a href="#contact" class="tab">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="menu" class="tab-content">
+        <section id="menu" class="tab-content active">
             <h2>Menu</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dish</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pasta Primavera</td>
-                        <td>Fresh vegetables with pasta</td>
-                        <td>$12.99</td>
-                    </tr>
-                    <tr>
-                        <td>Margherita Pizza</td>
-                        <td>Classic pizza with fresh basil</td>
-                        <td>$10.99</td>
-                    </tr>
-                    <tr>
-                        <td>Caesar Salad</td>
-                        <td>Crisp romaine with Caesar dressing</td>
-                        <td>$8.99</td>
-                    </tr>
-                    <tr>
-                        <td>Chocolate Lava Cake</td>
-                        <td>Warm chocolate cake with molten center</td>
-                        <td>$6.99</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="menu-item">
+                <h3>Pasta Primavera</h3>
+                <p>Fresh vegetables with pasta</p>
+                <p class="price">₨ 2,999</p>
+            </div>
+            <div class="menu-item">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with fresh basil</p>
+                <p class="price">₨ 2,499</p>
+            </div>
+            <div class="menu-item">
+                <h3>Caesar Salad</h3>
+                <p>Crisp romaine with Caesar dressing</p>
+                <p class="price">₨ 1,999</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Warm chocolate cake with molten center</p>
+                <p class="price">₨ 1,499</p>
+            </div>
+        </section>
+
+        <section id="about" class="tab-content">
+            <h2>About Us</h2>
+            <p>Welcome to Ayman Restaurant, where we offer a variety of delicious meals made from the freshest ingredients.</p>
         </section>
 
         <section id="gallery" class="tab-content">
             <h2>Gallery</h2>
             <div class="gallery-grid">
-                <img src="images/gallery-image-1.jfif" alt="Dish 1">
-                <img src="images/gallery-image-2.jpg" alt="Dish 2">
-                <img src="images/gallery-image-3.jfif" alt="Dish 3">
-                <img src="images/gallery-image-4.jfif" alt="Dish 4">
-                <img src="images/gallery-image-5.jfif" alt="Dish 5">
-                <img src="images/Margherita Pizza.jfif" alt="Dish 6">
-                <img src="images/Caesar Salad.jfif" alt="Dish 7">
+                <figure>
+                    <img src="images/gallery-image-1.jfif" alt="Dish 1">
+                    <figcaption>Dish 1: A delightful starter to kick off your meal.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery-image-2.jpg" alt="Dish 2">
+                    <figcaption>Dish 2: A popular choice among our guests.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery-image-3.jfif" alt="Dish 3">
+                    <figcaption>Dish 3: A unique blend of flavors.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery-image-4.jfif" alt="Dish 4">
+                    <figcaption>Dish 4: Fresh ingredients make this dish special.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gallery-image-5.jfif" alt="Dish 5">
+                    <figcaption>Dish 5: Perfectly cooked to perfection.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Margherita Pizza.jfif" alt="Dish 6">
+                    <figcaption>Margherita Pizza: Classic and timeless.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Caesar Salad.jfif" alt="Dish 7">
+                    <figcaption>Caesar Salad: Crisp and refreshing.</figcaption>
+                </figure>
             </div>
         </section>
 
         <section id="contact" class="tab-content">
             <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
+            <form aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
+    <footer>
+        <p>&copy; 2024 Ayman Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
     <footer>
         <p>&copy; 2024 Ayman Restaurant</p>
     </footer>
