@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,10 +11,29 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Theme Toggle Styles */
 .theme-toggle {
     display: none;
 }
 
+.theme-label {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgb(255, 0, 212);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.theme-label:hover {
+    background-color: rgb(139, 0, 127);
+}
+
+/* Dark Theme Styles */
 .theme-toggle:checked ~ body {
     background-color: #222;
     color: #eee;
@@ -28,6 +48,7 @@ body {
     color: #ddd;
 }
 
+/* Header and Navigation */
 header {
     background: #333;
     color: #fff;
@@ -73,6 +94,7 @@ nav ul li a:focus {
     color: white;
 }
 
+/* Tab Content */
 .tab-content {
     display: none;
 }
@@ -89,6 +111,7 @@ section {
     padding: 2rem;
 }
 
+/* Menu Item Styling */
 .menu-item {
     border: 2px solid #333;
     padding: 1rem;
@@ -105,6 +128,7 @@ section {
     font-weight: bold;
 }
 
+/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -129,6 +153,7 @@ figcaption {
     color: #555;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem;
@@ -137,6 +162,7 @@ footer {
     width: 100%;
 }
 
+/* Form Styling */
 .form-group {
     margin-bottom: 1rem;
 }
@@ -165,6 +191,7 @@ textarea {
     resize: vertical;
 }
 
+/* Button Styling */
 button {
     background-color: rgb(255, 0, 212);
     color: white;
@@ -181,6 +208,7 @@ button:focus {
     transform: translateY(-2px);
 }
 
+/* Responsive Styles */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
